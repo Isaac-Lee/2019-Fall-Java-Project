@@ -37,5 +37,10 @@ public class Member {
 	public void setNowUse(boolean nowUse) {
 		this.nowUse = nowUse;
 	}
+	
+	public Member(String id, String password) {
+		setID(id);
+		setPassword(password);
+	}
 
 }
