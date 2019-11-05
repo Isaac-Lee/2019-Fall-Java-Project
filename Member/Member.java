@@ -5,7 +5,7 @@ public class Member {
 	private String Password;
 	private String PhoneNum;
 	private String Email;
-	private boolean nowUse;
+	private boolean nowUse; // true이면 이용중, false이면 이용중 아님
 	
 	public String getID() {
 		return ID;
@@ -41,6 +41,19 @@ public class Member {
 	public Member(String id, String password) {
 		setID(id);
 		setPassword(password);
+	}
+	
+	public void set(String id, String password) {
+		setID(id);
+		setPassword(password);
+	}
+	
+	public void rentScooter() {
+		setNowUse(true);
+	}
+	
+	public void returnScooter() {
+		setNowUse(false);
 	}
 
 }
