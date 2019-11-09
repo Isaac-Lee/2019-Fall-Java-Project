@@ -52,7 +52,7 @@ public class Scooter {
 			run();
 		}
 		long end = System.currentTimeMillis();
-		return (int)(end-start)/10000; // 몇 분 탔는지 반환
+		return (int)(end-start)/10000; // 몇 분 탔는지 반환.
 	}
 	
 	public void run() {
