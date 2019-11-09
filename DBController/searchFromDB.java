@@ -7,11 +7,11 @@ import java.sql.Statement;
 import Login.java.DBController.connectDB;
 
 public class searchFromDB {
-	public static ResultSet search_client() throws SQLException {
+	public static ResultSet search_client(String tableName) throws SQLException {
         Statement stmt = connectDB.DBStmt();
         ResultSet rs = null;
         
-        String sql = "SELECT * from table_name";
+        String sql = "SELECT * from " + tableName;
 
         rs = stmt.executeQuery(sql);
         

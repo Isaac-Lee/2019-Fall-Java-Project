@@ -1,11 +1,11 @@
 package Scooter;
 
 public class Scooter {
-	private String ID;
-	private double totalBattery;
-	private double leftBatery;
+	private String 	ID;
+	private double 	totalBattery;
+	private double 	leftBatery;
 	private boolean nowUse;
-	private int[] location;
+	private int[] 	location;
 	
 	public double getLeftBatery() {
 		return leftBatery;

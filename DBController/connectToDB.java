@@ -7,8 +7,8 @@ import java.sql.Statement;
 
 public class connectToDB {
 	public static Statement DBStmt() {
-		Connection conn = null;
-		Statement stmt = null;
+		Connection 	conn = null;
+		Statement 	stmt = null;
 		try{
             Class.forName("org.mariadb.jdbc.Driver");
             
