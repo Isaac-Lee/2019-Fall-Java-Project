@@ -79,15 +79,15 @@ Scooter를 공유해주는 가상의 회사는 고객들의 정보를 가지고 
 
 - Member
 
-|Name|ID|Password|Phone|Email|nowUse|
-|---|---|---|---|---|---|
-|varchar(20)|varbinary(20)|varbinary(20)|varchar(30)|varchar(30)|tinyint(1)|
+|ID|Password|Phone|Email|nowUse|
+|---|---|---|---|---|
+|varbinary(20)|varbinary(20)|varchar(30)|varchar(30)|tinyint(1)|
 
 - Manager
 
-|Name|ID|Password|nowUse|
-|---|---|---|---|
-|varchar(20)|varbinary(20)|varbinary(20)|tinyint(1)|
+|ID|Password|nowUse|
+|---|---|---|
+|varbinary(20)|varbinary(20)|tinyint(1)|
 
 - Scooter
 
