@@ -36,7 +36,7 @@ Scooter를 공유해주는 가상의 회사는 고객들의 정보를 가지고 
 
 ##### 정보 접근 
 - 회원 열람(findMember) / 이벤트 열람(findEvent) / 토큰 열람(findToken)
-- 회원 목록 열람(findMemberList) / 전동 스쿠터 목록 열람(findEventList)
+- 회원 목록 열람(findMemberList) / 전동 스쿠터 목록 열람(findScooterList)
 - 모든 회원 수(getNumberOfMember) / 모든 전동 스쿠터 수(getNumberOfToken) / 사용중인 전동 스쿠터 수 / 사용가능한 전동 스쿠터 수
 
 ##### 기타(Gutiar)
@@ -74,4 +74,24 @@ Scooter를 공유해주는 가상의 회사는 고객들의 정보를 가지고 
 - 회원 정보 생성(중복생성방지 방법필요)/ 수정 / 관리
 - 전동 스쿠터 조회(searchScooter)
 - 전동 스쿠터 공유(shareScooter)
+
+#### 데이터베이스 구성
+
+- Member
+
+|Name|ID|Password|Phone|Email|nowUse|
+|---|---|---|---|---|---|
+|varchar(20)|varbinary(20)|varbinary(20)|varchar(30)|varchar(30)|tinyint(1)|
+
+- Manager
+
+|Name|ID|Password|nowUse|
+|---|---|---|---|
+|varchar(20)|varbinary(20)|varbinary(20)|tinyint(1)|
+
+- Scooter
+
+|ID|Location|nowUse|
+|---|---|---|
+|varbinary(20)|varchar(50)|tinyint(1)|
 
