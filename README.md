@@ -36,7 +36,7 @@ Scooter를 공유해주는 가상의 회사는 고객들의 정보를 가지고 
 
 ##### 정보 접근 
 - 회원 열람(findMember) / 이벤트 열람(findEvent) / 토큰 열람(findToken)
-- 회원 목록 열람(findMemberList) / 전동 스쿠터 목록 열람(findEventList)
+- 회원 목록 열람(findMemberList) / 전동 스쿠터 목록 열람(findScooterList)
 - 모든 회원 수(getNumberOfMember) / 모든 전동 스쿠터 수(getNumberOfToken) / 사용중인 전동 스쿠터 수 / 사용가능한 전동 스쿠터 수
 
 ##### 기타(Gutiar)
