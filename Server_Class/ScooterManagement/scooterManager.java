@@ -1,20 +1,30 @@
 package Server_Class.ScooterManagement;
 
-public class scooterManager {
+import DBController.insertIntoDB;
 
-	static void findScooterList() {
+public class scooterManager {
+	
+	public static boolean addScooter(String ID, String Location) {
+		return insertIntoDB.addScooter(ID, Location);
+	}
+	
+	public static boolean deleteScooter() {
+		return false;
+	}
+
+	public static void findScooterList() {
 		
 	}
 	
-	static void getNumberOfScooter() {
+	public static void getNumberOfScooter() {
 		
 	}
 	
-	static void getNumberOfNowUseScooter() {
+	public static void getNumberOfNowUseScooter() {
 		
 	}
 	
-	static void getNumberOfCanUseScooter() {
+	public static void getNumberOfCanUseScooter() {
 		
 	}
 }
