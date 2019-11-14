@@ -75,3 +75,22 @@ Scooter를 공유해주는 가상의 회사는 고객들의 정보를 가지고 
 - 전동 스쿠터 조회(searchScooter)
 - 전동 스쿠터 공유(shareScooter)
 
+#### 데이터베이스 구성
+
+- Member
+
+|ID|Password|Phone|Email|nowUse|
+|---|---|---|---|---|
+|varbinary(20)|varbinary(20)|varchar(30)|varchar(30)|tinyint(1)|
+
+- Manager
+
+|ID|Password|nowUse|
+|---|---|---|
+|varbinary(20)|varbinary(20)|tinyint(1)|
+
+- Scooter
+
+|ID|Location|nowUse|
+|---|---|---|
+|varbinary(20)|varchar(50)|tinyint(1)|
