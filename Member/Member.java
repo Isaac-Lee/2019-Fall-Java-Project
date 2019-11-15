@@ -5,7 +5,7 @@ public class Member {
 	private String 	Password;
 	private String 	PhoneNum;
 	private String 	Email;
-	private boolean 	nowUse; // true이면 이용중, false이면 이용중 아님
+	private boolean nowUse; // true이면 이용중, false이면 이용중 아님
 	
 	public String getID() {
 		return ID;
